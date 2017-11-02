@@ -38,7 +38,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@mipmap/story"
+                    android:src="@mipmap/story2"
 
                     />
                 <ImageButton
@@ -46,7 +46,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@mipmap/rhyme"
+                    android:src="@mipmap/rhyme2"
 
                     />
 
@@ -62,7 +62,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@mipmap/cartoon"
+                    android:src="@mipmap/cartoon2"
 
                     />
                 <ImageButton
@@ -70,7 +70,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@mipmap/gk"
+                    android:src="@mipmap/gk2"
 
                     />
 
@@ -86,7 +86,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@mipmap/craft"
+                    android:src="@mipmap/craft2"
 
                     />
                 <ImageButton
@@ -94,7 +94,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@mipmap/todolist"
+                    android:src="@mipmap/todolist2"
 
                     />
 

@@ -1,0 +1,7 @@
+#Wed Nov 01 23:48:21 BDT 2017
+base.0=/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_5ba0545c20e4ca3c8754309042e5e6ebdca46667
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_974308a09562167cd83010308f8e1ce0229d740c/classes.dex
+base.1=/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_974308a09562167cd83010308f8e1ce0229d740c
+file.0=/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_5ba0545c20e4ca3c8754309042e5e6ebdca46667/classes.dex

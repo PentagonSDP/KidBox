@@ -17,8 +17,10 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -194,7 +196,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void getData() {
 
-
             final NotificationManager notificationManager = (NotificationManager) getSystemService
                     (NOTIFICATION_SERVICE);
 
@@ -218,7 +219,7 @@ public class MainActivity extends AppCompatActivity {
                         Log.d("Name111 ", values[0]);
                         Log.d("Name222 ", values[1]);
 
-                        Book book = new Book(submissionCheck);
+                        AbstractBook book = new Book(submissionCheck);
                         book.setBook(uid, dataSnapshot.getKey(), values[0], values[1]);
 
 
@@ -287,6 +288,8 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Error in data retrieval", Toast.LENGTH_SHORT).show();
                 }
             });
+
+
 
         }
 

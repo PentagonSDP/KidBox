@@ -19,8 +19,12 @@ public class VideoPlayer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_player);
 
+        Bundle bundle = getIntent().getExtras();
+        String str = bundle.getString("flag");
+
+
         VideoView v = (VideoView) findViewById(R.id.videoView);
-        v.setVideoURI(Uri.parse("android.resource://com.example.user.kidbox/raw/coldplaylyrics"));
+        v.setVideoURI(Uri.parse("android.resource://com.example.user.kidbox/raw/"+str));
         v.setMediaController(new MediaController(this));
         v.requestFocus();
         v.start();

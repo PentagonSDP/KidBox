@@ -18,29 +18,31 @@ import java.util.HashMap;
 //import org.apache.commons.io.IOUtils;
 
 public class Craft_video extends Activity {
-	// All static variables
-	static final String URL = "http://api.androidhive.info/music/music.xml";
+    // All static variables
+    static final String URL = "http://api.androidhive.info/music/music.xml";
+    String[] stories = {"hare_tortoise", "dove_ant"};
+    String[] stories_thumb = {"tortoise_and_the_hare", "ant_dove"};
 
 
     String youtube = "http://www.youtube.com";
 
-	// XML node keys
-	static final String KEY_SONG = "song"; // parent node
-	static final String KEY_ID = "id";
-	static final String KEY_TITLE = "title";
-	static final String KEY_ARTIST = "artist";
-	static final String KEY_DURATION = "duration";
-	static final String KEY_THUMB_URL = "thumb_url";
+    // XML node keys
+    static final String KEY_SONG = "song"; // parent node
+    static final String KEY_ID = "id";
+    static final String KEY_TITLE = "title";
+    static final String KEY_ARTIST = "artist";
+    static final String KEY_DURATION = "duration";
+    static final String KEY_THUMB_URL = "thumb_url";
+    static final String KEY_THUMBNAIL = "thumbpic";
 
 
     final ArrayList<HashMap<String, String>> songsList = new ArrayList<HashMap<String, String>>();
-	
-	ListView list;
-    LazyAdapter adapter;
+
+    ListView list;
+    LazyAdapter_story adapter;
 
     void addData(String response)
     {
-
         ArrayList<String> finalData = new ArrayList<String>();
         response = response.replaceAll("\"", "");
         response = response.replaceAll("\\{", "");
@@ -74,76 +76,45 @@ public class Craft_video extends Activity {
 
         Log.d("SONGLIST ", map.toString());
     }
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.story);
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.story);
 
         Bundle bundle = getIntent().getExtras();
         String str = bundle.getString("flag");
         //Toast.makeText(getApplicationContext(),str,Toast.LENGTH_SHORT).show();
 
-        int idCounter = -1;
+        int idCounter = 0;
 
 
-		HashMap<String, String> map = new HashMap<String, String>();
-		// adding each child node to HashMap key => value
-		map.put(KEY_ID, Integer.toString(++idCounter));
-		map.put(KEY_TITLE, "Hello");
-		map.put(KEY_ARTIST, "Adele");
-		map.put(KEY_DURATION, "04:00 minutes");
-		map.put(KEY_THUMB_URL, "https://www.youtube.com/watch?v=YQHsXMglC9A");
+        HashMap<String, String> map = new HashMap<String, String>();
+        // adding each child node to HashMap key => value
+        map.put(KEY_ID, Integer.toString(idCounter));
+        map.put(KEY_TITLE, "Baby Bath Time");
+        map.put(KEY_ARTIST, " - ");
+        map.put(KEY_DURATION, "04:00 mins");
+        map.put(KEY_THUMB_URL, stories[idCounter]);
+        map.put(KEY_THUMBNAIL, stories_thumb[idCounter]);
 
         songsList.add(map);
 
+        idCounter++;
+
         map = new HashMap<String, String>();
-        // adding each child node to HashMap key => value
-        map.put(KEY_ID, Integer.toString(++idCounter));
-        map.put(KEY_TITLE, "Video1");
-        map.put(KEY_ARTIST, "UNICEF");
-        map.put(KEY_DURATION, "04:00 minutes");
-        map.put(KEY_THUMB_URL, "https://www.youtube.com/watch?v=zEwQRspiyyo");
+        map.put(KEY_ID, Integer.toString(idCounter));
+        map.put(KEY_TITLE, "Dove Ant");
+        map.put(KEY_ARTIST, " - ");
+        map.put(KEY_DURATION, "04:00 mins");
+        map.put(KEY_THUMB_URL, stories[idCounter]);
+        map.put(KEY_THUMBNAIL, stories_thumb[idCounter]);
 
         songsList.add(map);
 
-        map = new HashMap<String, String>();
-        // adding each child node to HashMap key => value
-        map.put(KEY_ID, Integer.toString(++idCounter));
-        map.put(KEY_TITLE, "Video2");
-        map.put(KEY_ARTIST, "UNICEF");
-        map.put(KEY_DURATION, "04:00 minutes");
-        map.put(KEY_THUMB_URL, "https://www.youtube.com/watch?v=4pf2FiCa6Uo");
+        list=(ListView)findViewById(R.id.list1);
 
-        songsList.add(map);
-
-        map = new HashMap<String, String>();
-        // adding each child node to HashMap key => value
-        map.put(KEY_ID, Integer.toString(++idCounter));
-        map.put(KEY_TITLE, "Video3");
-        map.put(KEY_ARTIST, "UNICEF");
-        map.put(KEY_DURATION, "04:00 minutes");
-        map.put(KEY_THUMB_URL, "https://www.youtube.com/watch?v=w1XI2R3FgwQ");
-
-        songsList.add(map);
-
-        map = new HashMap<String, String>();
-        // adding each child node to HashMap key => value
-        map.put(KEY_ID, Integer.toString(++idCounter));
-        map.put(KEY_TITLE, "Video4");
-        map.put(KEY_ARTIST, "UNICEF");
-        map.put(KEY_DURATION, "04:00 minutes");
-        map.put(KEY_THUMB_URL, "https://www.youtube.com/watch?v=I9jXpuVzdYI");
-
-
-
-		// adding HashList to ArrayList
-		songsList.add(map);
-
-
-		list=(ListView)findViewById(R.id.list);
-		
-		// Getting adapter by passing xml data ArrayList
-        adapter=new LazyAdapter(this, songsList);
+        // Getting adapter by passing xml data ArrayList
+        adapter=new LazyAdapter_story(this, songsList);
         list.setAdapter(adapter);
 
         Runnable run = new Runnable() {
@@ -155,14 +126,13 @@ public class Craft_video extends Activity {
         };
 
         this.runOnUiThread(run);
-        
 
         // Click event for single list row
         list.setOnItemClickListener(new OnItemClickListener() {
 
-			@Override
-			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
                 String url = "---";
 
                 for(int i=0; i<songsList.size(); i++)
@@ -174,13 +144,17 @@ public class Craft_video extends Activity {
                         Toast.makeText(getApplicationContext(), "Testing  --- "+url,
                                 Toast.LENGTH_SHORT).show();
 
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
-                        Log.i("Video", "Video Playing....");
+                        Intent video = new Intent(getApplicationContext() , VideoPlayer.class);
+                        video.putExtra("flag", stories[i]);//EXTRA_MESSAGE
+                        startActivity(video);
+
+                        //startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+                        //Log.i("Video", "Video Playing....");
                         break;
                     }
                 }
-			}
-		});
+            }
+        });
 
         ImageButton imageButton = (ImageButton) findViewById(R.id.addVideo);
         imageButton.setOnClickListener(new View.OnClickListener() {
@@ -198,15 +172,15 @@ public class Craft_video extends Activity {
         int m = Integer.valueOf(str);
         //Toast.makeText(getApplicationContext(), String.valueOf(m) , Toast.LENGTH_LONG).show();
 
-            if(m == 0) {
-                imageButton.setVisibility(View.INVISIBLE);
-            }
+        if(m == 0) {
+            imageButton.setVisibility(View.INVISIBLE);
+        }
         else
-            {
-                imageButton.setVisibility(View.VISIBLE);
-            }
+        {
+            imageButton.setVisibility(View.VISIBLE);
+        }
 
 
 
-	}	
+    }
 }

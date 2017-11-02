@@ -309,21 +309,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="ad7706f8bb4a985656a8d2142f74021c8b0e03d8">
-        <dex dex="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-9.6.1_b7e9c482a40334eca24f74b836b4454ec344c4d1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/exploded-aar/com.android.support.test/exposed-instrumentation-api-publish/0.5/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
         sha1="905f3e63973d47fedf2d945fa31d8c0f0c98816e">
         <dex dex="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support.test-exposed-instrumentation-api-publish-0.5_5c33a6f55c6bee6faf7db7735432b8003a0a7f7d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="ad7706f8bb4a985656a8d2142f74021c8b0e03d8">
+        <dex dex="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-9.6.1_b7e9c482a40334eca24f74b836b4454ec344c4d1/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -336,21 +336,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/hosneara/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/transforms/dex/debug/folders/1000/10/javax.inject-1_ac53cb4dc3a23014abaee0003c1561660fe6c7e6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/exploded-aar/com.android.support.test/rules/0.5/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
         sha1="7e11799d8a26bfa5d48acafe012ee5545b9bf468">
         <dex dex="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support.test-rules-0.5_161e05061f4ebb2ece1427cad678b7115e1353d8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/hosneara/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/transforms/dex/debug/folders/1000/10/javax.inject-1_ac53cb4dc3a23014abaee0003c1561660fe6c7e6/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -448,7 +448,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="7d20c526ec620c9e4d596912de511db561a2546f">
+        sha1="2468f54d9bce20b0c014d06566b8a3bb20b175ef">
         <dex dex="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7e86aa267274d65e8bfa06c0a43a5e09229d67f0/classes.dex" />
     </item>
     <item
@@ -489,21 +489,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="159494eb362396d073d8c922b77e40c0da5fc5bc">
-        <dex dex="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-9.6.1_79c7235ac10bf85b67b4fb2be9d3e8b9f7528d13/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/hosneara/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
         sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
         <dex dex="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-applinks-1.4.0_9b8deecdb55127fb0e3118db1cdcde91caac5143/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="159494eb362396d073d8c922b77e40c0da5fc5bc">
+        <dex dex="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-9.6.1_79c7235ac10bf85b67b4fb2be9d3e8b9f7528d13/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -556,7 +556,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="3f38ef34d43f0eb6051fe4f4b630a7adaec2f446">
+        sha1="f6a4ddf9b6eee62119e87951cb542c04db58fde3">
         <dex dex="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_4d039064031a7fadf5157c840da61e0b8f1bc18b/classes.dex" />
     </item>
     <item
@@ -570,21 +570,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_e44422f0023c9b2f0b93c400ee5c278f19a90518/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
         sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
         <dex dex="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_444d292630a101f93ae90d0ea76a06cdbcf7f2d6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/home/hosneara/AndroidStudioProjects/project1/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_e44422f0023c9b2f0b93c400ee5c278f19a90518/classes.dex" />
     </item>
     <item
         is-multidex="true"

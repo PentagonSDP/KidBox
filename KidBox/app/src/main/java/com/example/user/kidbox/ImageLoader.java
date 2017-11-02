@@ -19,23 +19,38 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.media.ThumbnailUtils;
+import android.provider.MediaStore;
+import android.util.Log;
 import android.widget.ImageView;
+
+import junit.framework.Assert;
 
 public class ImageLoader {
     
     MemoryCache memoryCache=new MemoryCache();
     FileCache fileCache;
+    Context context;
     private Map<ImageView, String> imageViews=Collections.synchronizedMap(new WeakHashMap<ImageView, String>());
     ExecutorService executorService; 
     
     public ImageLoader(Context context){
+        this.context = context;
         fileCache=new FileCache(context);
         executorService=Executors.newFixedThreadPool(5);
     }
-    
-    final int stub_id = R.drawable.no_image;
-    public void DisplayImage(String url, ImageView imageView)
+    public static int getDrawable(Context context, String name)
     {
+        Assert.assertNotNull(context);
+        Assert.assertNotNull(name);
+
+        return context.getResources().getIdentifier(name,
+                "drawable", context.getPackageName());
+    }
+    int stub_id = R.drawable.no_image;
+    public void DisplayImage(String url, ImageView imageView, String thumb, Activity activity)
+    {
+        stub_id = getDrawable(activity, thumb);
         imageViews.put(imageView, url);
         Bitmap bitmap=memoryCache.get(url);
         if(bitmap!=null)
@@ -43,7 +58,13 @@ public class ImageLoader {
         else
         {
             queuePhoto(url, imageView);
-            imageView.setImageResource(stub_id);
+            Log.d("picture ", thumb);
+            Bitmap bmThumbnail;
+            bmThumbnail = ThumbnailUtils.createVideoThumbnail(thumb, MediaStore.Images.Thumbnails
+                    .MICRO_KIND);
+            imageView.setImageBitmap(bmThumbnail);
+
+            //imageView.setImageResource(getDrawable(activity, thumb));
         }
     }
         

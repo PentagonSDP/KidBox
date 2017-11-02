@@ -45,7 +45,7 @@ public class SubmissionCheck {
     }
     public static void setState(int index)
     {
-        //state[index] = true;
+        state[index] = true;
         notifyObserver(index);
     }
     public static void notifyObserver(int index)
@@ -65,18 +65,6 @@ public class SubmissionCheck {
         for(int i=0; i<books.size(); i++)
         {
             setState(i);
-          /*  long Curtime = System.currentTimeMillis();
-            //Log.d("Hope1 : ",Long.toString(Curtime));
-            long prevtime = Long.parseLong(books.get(i).getSubmissionTime());
-            if(Curtime >= prevtime)
-            {
-                setState(i);
-                //Log.d("Hope2: ", "Time out");
-            }
-            else {
-                    timer = new Timer();
-                    timer.schedule(new childTimer(i), (prevtime-Curtime));
-            } */
         }
     }
 }

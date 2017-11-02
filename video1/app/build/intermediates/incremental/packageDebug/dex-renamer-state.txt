@@ -1,0 +1,7 @@
+#Thu Oct 05 12:30:38 BDT 2017
+base.0=/home/hosneara/AndroidStudioProjects/video1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_447f6ef827d880d66c8dd2c1e511265cc98882fd
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/home/hosneara/AndroidStudioProjects/video1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b6e448feb5d5aa9fde45131c39f7591aa169ec1e/classes.dex
+base.1=/home/hosneara/AndroidStudioProjects/video1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b6e448feb5d5aa9fde45131c39f7591aa169ec1e
+file.0=/home/hosneara/AndroidStudioProjects/video1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_447f6ef827d880d66c8dd2c1e511265cc98882fd/classes.dex

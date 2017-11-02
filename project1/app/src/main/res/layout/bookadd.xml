@@ -42,7 +42,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/edition"/>
-            <TextView
+            <Spinner
+                android:id="@+id/designation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:color="#F5F5DC"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown" />
+            <!--<TextView
                 android:layout_marginTop="@dimen/activity_horizontal_margin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -51,7 +58,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/year"/>
+                android:id="@+id/year"/> -->
 
             <Button
                 android:id="@+id/done"

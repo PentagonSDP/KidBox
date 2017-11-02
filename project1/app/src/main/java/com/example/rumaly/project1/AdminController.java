@@ -12,6 +12,23 @@ public class AdminController {
         this.book = book;
         this.adminView = adminView;
     }
+
+    public String getBookName()
+    {
+        return book.getName();
+    }
+    public String getBookAuthor()
+    {
+        return book.getAuthor();
+    }
+    public String getBookType()
+    {
+        return book.getYear();
+    }
+    public String getBookEdition()
+    {
+        return book.getEdition();
+    }
     public void setBookName(String bookName)
     {
         book.setName(bookName);
@@ -35,8 +52,8 @@ public class AdminController {
     }
     public void deleteBook()
     {
-        adminView.setBookEnvForDelete();
-        adminView.BookDelete(book.getName());
+        adminView.setBookEnvironvent(book.getName());
+        adminView.BookDelete();
     }
 
 }

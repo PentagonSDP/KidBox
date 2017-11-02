@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8a42d1f006db9fde745a6ff231ce901aaba69930">
+        <dex dex="/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_5ba0545c20e4ca3c8754309042e5e6ebdca46667/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/hosneara/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.19/a8f23f65fc1e522ee4a1a697ee569901a46741fa/library-1.0.19.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
+        <dex dex="/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/transforms/dex/debug/folders/1000/10/library-1.0.19_473d842fdc64c8123f9c3175e277a9438e1f0fbf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/opt/android-studio/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-io-2.4_903097326c585ffbfceccce27d1c923b16154ba6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f2951ab3887ca3e74bf60f4adc78e51543582384">
+        <dex dex="/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_974308a09562167cd83010308f8e1ce0229d740c/classes.dex" />
+    </item>
+
+</items>

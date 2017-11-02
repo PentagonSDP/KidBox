@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/gradient_bg_hover.xml",
+        "source": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/src/main/res/drawable-hdpi/gradient_bg_hover.xml"
+    },
+    {
+        "merged": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/black.jpg",
+        "source": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/src/main/res/drawable-hdpi/black.jpg"
+    },
+    {
+        "merged": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/list_selector.xml",
+        "source": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/src/main/res/drawable-hdpi/list_selector.xml"
+    },
+    {
+        "merged": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/gradient_bg.xml",
+        "source": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/src/main/res/drawable-hdpi/gradient_bg.xml"
+    },
+    {
+        "merged": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/image_bg.xml",
+        "source": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/src/main/res/drawable-hdpi/image_bg.xml"
+    }
+]

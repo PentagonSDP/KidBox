@@ -22,7 +22,7 @@ import static java.lang.Thread.sleep;
  */
 
 public class AdminView {
-    private Firebase Bookfirebase, BookDetailFirebase, BookDeleteFirebabse;
+    private Firebase Bookfirebase, BookDetailFirebase, BookDeleteFirebabse, IterateFirebase;
     private Map newbook;
     private String bookname, author, edition, type, key;
     private String bookPath, bookDetailsPath, bookdeletePath;
@@ -40,16 +40,18 @@ public class AdminView {
 
         bookPath = "https://project1-4257e.firebaseio.com/BooksDatabase/"+type;
         bookDetailsPath = bookPath + "/" +bookname;
+
+        Bookfirebase = new Firebase(bookPath);
+        BookDetailFirebase = new Firebase(bookDetailsPath);
     }
-    public void setBookEnvForDelete()
+    public void setBookEnvironvent(String bookname)
     {
+        this.bookname = bookname;
         bookdeletePath = "https://project1-4257e.firebaseio.com/BooksDatabase/";
+        IterateFirebase = new Firebase(bookdeletePath);
     }
     public void BookEntry()
     {
-        Bookfirebase = new Firebase(bookPath);
-        BookDetailFirebase = new Firebase(bookDetailsPath);
-
         newbook = new HashMap();
         newbook.put(bookname," ");
         Bookfirebase.updateChildren(newbook);
@@ -67,11 +69,10 @@ public class AdminView {
         BookDetailFirebase.updateChildren(newbook);
     }
 
-    public void BookDelete(final String bookname)
+    public void BookDelete()
     {
-        final Firebase firebase = new Firebase(bookdeletePath);
 
-        firebase.orderByChild(bookname).addListenerForSingleValueEvent(new com
+        IterateFirebase.orderByChild(bookname).addListenerForSingleValueEvent(new com
                 .firebase.client.ValueEventListener(){
             @Override
             public void onDataChange(com.firebase.client.DataSnapshot dataSnapshot) {
@@ -95,7 +96,7 @@ public class AdminView {
             @Override
             public void onCancelled(FirebaseError firebaseError) {
 
-                Log.d("User",firebaseError.getMessage() );
+                Log.d("User",firebaseError.getMessage());
             }
         });
     }

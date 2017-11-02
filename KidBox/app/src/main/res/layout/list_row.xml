@@ -6,7 +6,7 @@
     android:padding="5dip" >
 
 	<!--  ListRow Left sied Thumbnail image -->
-	<LinearLayout android:id="@+id/thumbnail" 
+	<LinearLayout android:id="@+id/thumbnail"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:padding="3dip"		

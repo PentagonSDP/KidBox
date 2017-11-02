@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/res/merged/debug/drawable-hdpi/play.png",
+        "source": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/src/main/res/drawable-hdpi/play.png"
+    },
+    {
+        "merged": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/res/merged/debug/drawable-hdpi/add.png",
+        "source": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/src/main/res/drawable-hdpi/add.png"
+    },
+    {
+        "merged": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/res/merged/debug/drawable-hdpi/no_image.png",
+        "source": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/src/main/res/drawable-hdpi/no_image.png"
+    },
+    {
+        "merged": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/res/merged/debug/drawable-hdpi/heart.png",
+        "source": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/src/main/res/drawable-hdpi/heart.png"
+    },
+    {
+        "merged": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/res/merged/debug/drawable-hdpi/icon.png",
+        "source": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/src/main/res/drawable-hdpi/icon.png"
+    },
+    {
+        "merged": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/res/merged/debug/drawable-hdpi/rihanna.png",
+        "source": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/src/main/res/drawable-hdpi/rihanna.png"
+    },
+    {
+        "merged": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/build/intermediates/res/merged/debug/drawable-hdpi/arrow.png",
+        "source": "/home/hosneara/AndroidStudioProjects/CustomizedListView2/app/src/main/res/drawable-hdpi/arrow.png"
+    }
+]
