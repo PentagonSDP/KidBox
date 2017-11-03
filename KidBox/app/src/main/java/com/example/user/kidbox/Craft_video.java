@@ -79,7 +79,7 @@ public class Craft_video extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.story);
+        setContentView(R.layout.craft);
 
         Bundle bundle = getIntent().getExtras();
         String str = bundle.getString("flag");
@@ -161,6 +161,7 @@ public class Craft_video extends Activity {
             @Override
             public void onClick(View v) {
                 Log.d("Pressing", "getdata");
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(youtube)));
                 //getData();
                 //adapter=new LazyAdapter(this, songsList);
                 list.setAdapter(adapter);
@@ -179,8 +180,5 @@ public class Craft_video extends Activity {
         {
             imageButton.setVisibility(View.VISIBLE);
         }
-
-
-
     }
 }

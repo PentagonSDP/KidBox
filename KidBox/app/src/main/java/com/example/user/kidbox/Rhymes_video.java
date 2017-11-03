@@ -160,6 +160,7 @@ public class Rhymes_video extends Activity {
             @Override
             public void onClick(View v) {
                 Log.d("Pressing", "getdata");
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(youtube)));
                 //getData();
                 //adapter=new LazyAdapter(this, songsList);
                 list.setAdapter(adapter);
@@ -174,12 +175,10 @@ public class Rhymes_video extends Activity {
         if(m == 0) {
             imageButton.setVisibility(View.INVISIBLE);
         }
-        else
+        else if(m == 1)
         {
             imageButton.setVisibility(View.VISIBLE);
         }
-
-
 
     }
 }

@@ -17,7 +17,7 @@ public class TabActivity_2 extends Activity {
     ListView lv2;
     Context context_bonous;
     private int flag = 0;
-    //public static int [] prgmImages={R.drawable.pic1,R.drawable.pic2,R.drawable.pic3,R.drawable.pic4,R.drawable.pic5,R.drawable.pic6,R.drawable.pic7};
+    public static int [] bonousImages={R.drawable.plant,R.drawable.helpmom,R.drawable.puzzle,R.drawable.vegetable};
     public static String [] bonousTaskList={"Planting tree","Helping mom","Solving Puzzle","Eating Vegetable"};
     public static String[] buttonList2 = {"Approve","","",""};
     @Override
@@ -48,6 +48,6 @@ public class TabActivity_2 extends Activity {
 
         context_bonous = this;
         lv2 = (ListView) findViewById(R.id.list_bonous);
-        lv2.setAdapter(new CustomAdapter_bonous(this, bonousTaskList,buttonList2,flag));
+        lv2.setAdapter(new CustomAdapter_bonous(this, bonousTaskList,bonousImages,buttonList2,flag));
     }
 }

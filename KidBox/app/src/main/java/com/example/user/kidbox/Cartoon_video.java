@@ -179,8 +179,5 @@ public class Cartoon_video extends Activity {
         {
             imageButton.setVisibility(View.VISIBLE);
         }
-
-
-
     }
 }

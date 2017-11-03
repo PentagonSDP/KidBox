@@ -41,5 +41,59 @@ public class BonousTask extends AppCompatActivity {
 
             });
         }
+        if (q_sp == 1)
+        {
+            iv.setImageResource(R.drawable.helpmom);
+            //tv.setText("" +" "+"(১৯৫৩-১৯৭১)"+" "+" সেক্টরঃ ৪নং");
+            tv_sp.setText("Helped mom once: 25 points!");
+
+            btn.setOnClickListener(new View.OnClickListener() {
+
+                public void onClick(View v) {
+                    Intent Image = new Intent(getApplicationContext(), ToDoActivity.class);
+                    String str = "0";
+                    Image.putExtra("flag", str);
+                    startActivity(Image);
+                    //startActivity(new Intent(getApplicationContext(), ToDoActivity.class));
+                }
+
+            });
+        }
+        if (q_sp == 2)
+        {
+            iv.setImageResource(R.drawable.puzzle);
+            //tv.setText("" +" "+"(১৯৫৩-১৯৭১)"+" "+" সেক্টরঃ ৪নং");
+            tv_sp.setText("Solved puzzle once: 25 points!");
+
+            btn.setOnClickListener(new View.OnClickListener() {
+
+                public void onClick(View v) {
+                    Intent Image = new Intent(getApplicationContext(), ToDoActivity.class);
+                    String str = "0";
+                    Image.putExtra("flag", str);
+                    startActivity(Image);
+                    //startActivity(new Intent(getApplicationContext(), ToDoActivity.class));
+                }
+
+            });
+        }
+        if (q_sp == 3)
+        {
+            iv.setImageResource(R.drawable.vegetable);
+            //tv.setText("" +" "+"(১৯৫৩-১৯৭১)"+" "+" সেক্টরঃ ৪নং");
+            tv_sp.setText("Have eaten vegetable: 25 points!");
+
+            btn.setOnClickListener(new View.OnClickListener() {
+
+                public void onClick(View v) {
+                    Intent Image = new Intent(getApplicationContext(), ToDoActivity.class);
+                    String str = "0";
+                    Image.putExtra("flag", str);
+                    startActivity(Image);
+                    //startActivity(new Intent(getApplicationContext(), ToDoActivity.class));
+                }
+
+            });
+        }
     }
 }

@@ -6,11 +6,7 @@ import android.os.Bundle;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 
-/**
- * Created by emma on 10/19/17.
- */
-
-@SuppressWarnings("deprecation")
+import java.util.ArrayList;
 public class ToDoActivity extends TabActivity {
 
     TabHost TabHostWindow;
@@ -21,6 +17,9 @@ public class ToDoActivity extends TabActivity {
 
         Bundle bundle = getIntent().getExtras();
         String str = bundle.getString("flag");
+        //String str1 = bundle.getString("addtaskFlag");
+        //ArrayList<String> myList = bundle.getStringArrayList("mylist");
+       // ArrayList<String> myList = (ArrayList<String>) getIntent().getSerializableExtra("mylist");
 
 
         //Assign id to Tabhost.
@@ -35,6 +34,8 @@ public class ToDoActivity extends TabActivity {
 
         Intent Image = new Intent(this , TabActivity_1.class);
         Image.putExtra("flag", str);
+        //Image.putExtra("addtaskFlag", str1);
+        //Image.putExtra("mylist",myList);
         TabMenu1.setIndicator("Daily");
         TabMenu1.setContent(Image);
 

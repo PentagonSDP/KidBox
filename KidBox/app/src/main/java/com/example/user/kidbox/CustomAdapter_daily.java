@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -18,14 +19,15 @@ class CustomAdapter_daily extends BaseAdapter {
     String[] result_btn1;
     Context context_daily;
     private int flag = 0;
-    //int [] imageId;
+    int [] dimageId;
     private static LayoutInflater inflater = null;
 
-    public CustomAdapter_daily(TabActivity_1 mainActivity, String[] dailyTaskList, String[] buttonList1, int fg) {
+    public CustomAdapter_daily(TabActivity_1 mainActivity, String[] dailyTaskList, int[] dailyImages, String[] buttonList1, int fg) {
         // TODO Auto-generated constructor stub
         result_daily = dailyTaskList;
         context_daily = mainActivity;
         result_btn1 = buttonList1;
+        dimageId = dailyImages;
         flag = fg;
         //imageId=prgmImages;
         inflater = (LayoutInflater) context_daily.
@@ -53,19 +55,19 @@ class CustomAdapter_daily extends BaseAdapter {
     public class Holder {
         TextView t_daily;
         Button b_daily;
-        //ImageView img;
+        ImageView d_img;
     }
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
         // TODO Auto-generated method stub
-        CustomAdapter_daily.Holder holder = new CustomAdapter_daily.Holder();
+        Holder holder = new Holder();
         View rowView;
         rowView = inflater.inflate(R.layout.daily,null);
         holder.t_daily = (TextView) rowView.findViewById(R.id.text_daily);
         holder.b_daily = (Button) rowView.findViewById(R.id.btn_daily);
+        holder.d_img=(ImageView) rowView.findViewById(R.id.image_daily);
 
-        // holder.img=(ImageView) rowView.findViewById(R.id.imageView1);
         holder.t_daily.setText(result_daily[position]);
         if( flag ==0 ){
             holder.b_daily.setVisibility(View.INVISIBLE);
@@ -76,7 +78,7 @@ class CustomAdapter_daily extends BaseAdapter {
             }
         }
 
-        // holder.img.setImageResource(imageId[position]);
+         holder.d_img.setImageResource(dimageId[position]);
         rowView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

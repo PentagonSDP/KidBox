@@ -124,37 +124,61 @@ public class MainActivity extends AppCompatActivity{
     PopupWindow pwindo;
     private void initiatePopupWindow() {
         try {
-            //Toast.makeText(getApplicationContext(),"Hello",Toast.LENGTH_SHORT).show();
             LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             View layout = inflater.inflate(R.layout.signup,(ViewGroup) findViewById(R.id.popup_element));
-            pwindo = new PopupWindow(layout, 600, 770,true);
+            pwindo = new PopupWindow(layout, 700, 970,true);
 
-            /*pwindo.setOutsideTouchable(true);
+
             pwindo.setTouchable(true);
-            pwindo.setBackgroundDrawable(new BitmapDrawable(
-                    getApplicationContext().getResources(),
-                    Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888)
-            ));*/
-
             pwindo.showAtLocation(layout, Gravity.CENTER, 0, 0);
-            //pwindo.update();
+            pwindo.update();
 
             Button log_ = (Button) layout.findViewById(R.id.button_log);
             log_.setOnClickListener(cancel_button);
+
+            Button creatAcc = (Button) findViewById(R.id.createAccount);
+            //creatAcc.setOnClickListener(gotoSignUP);
+
+            creatAcc.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    myFancyMethod(view);
+                    Toast.makeText(getApplicationContext(),"Wrong mail id",Toast.LENGTH_SHORT).show();
+                }
+            });
+
+            Button cancel = (Button) layout.findViewById(R.id.cancel);
+            //cancel.setOnClickListener(refreshPage);
+            cancel.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    myFancyMethod1(view);
+                    Toast.makeText(getApplicationContext(),"Canceled",Toast.LENGTH_SHORT).show();
+                }
+            });
 
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
+    public void myFancyMethod1(View v) {
+        Toast.makeText(getApplicationContext(),"Canceled",Toast.LENGTH_SHORT).show();
+        Intent Image = new Intent(getApplicationContext() , MainActivity.class);
+        startActivity(Image);
+        // does something very interesting
+    }
+    public void myFancyMethod(View v) {
+        Toast.makeText(getApplicationContext(),"Wrong mail id",Toast.LENGTH_SHORT).show();
+        Intent Image = new Intent(getApplicationContext() , signUpMain.class);
+        startActivity(Image);
+        // does something very interesting
+    }
     private View.OnClickListener cancel_button = new View.OnClickListener() {
         public void onClick(View v) {
-            //Toast.makeText(getApplicationContext(),"Hello",Toast.LENGTH_SHORT).show();
-            Log.d("OnDoubleTapListener", "onDoubleTap");
             Intent Image = new Intent(getApplicationContext() , tempMain.class);
             startActivity(Image);
-            //pwindo.setBackgroundDrawable(new BitmapDrawable(getResources()));
-            pwindo.dismiss();
+
         }
     };
 

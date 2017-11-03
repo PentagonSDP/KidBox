@@ -161,6 +161,7 @@ public class Story_video extends Activity {
             @Override
             public void onClick(View v) {
                 Log.d("Pressing", "getdata");
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(youtube)));
                 //getData();
                 //adapter=new LazyAdapter(this, songsList);
                 list.setAdapter(adapter);
@@ -169,7 +170,7 @@ public class Story_video extends Activity {
             }
         });
 
-        /*int m = Integer.valueOf(str);
+        int m = Integer.valueOf(str);
         //Toast.makeText(getApplicationContext(), String.valueOf(m) , Toast.LENGTH_LONG).show();
 
         if(m == 0) {
@@ -177,8 +178,8 @@ public class Story_video extends Activity {
         }
         else
         {
-            imageButton.(View.VISIBLE);
-        }*/
+            imageButton.setVisibility(View.VISIBLE);
+        }
 
 
 

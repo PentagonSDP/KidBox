@@ -23,6 +23,7 @@ public class DailyTask extends AppCompatActivity {
         Button btn = (Button) findViewById(R.id.b_d);
         //TextView tv2_sp = (TextView) findViewById(R.id.t2_sp);
 
+
         if (q_sp == 0)
         {
             iv.setImageResource(R.drawable.tidyupbed);
@@ -43,6 +44,85 @@ public class DailyTask extends AppCompatActivity {
             });
 
         }
+
+        if (q_sp == 1)
+        {
+            iv.setImageResource(R.drawable.toothbrush);
+            //tv.setText("" +" "+"(১৯৫৩-১৯৭১)"+" "+" সেক্টরঃ ৪নং");
+            tv_sp.setText("Brushing teeth done: 5 points!");
+
+            btn.setOnClickListener(new View.OnClickListener() {
+
+                public void onClick(View v) {
+                    Intent Image = new Intent(getApplicationContext(), ToDoActivity.class);
+                    String str = "0";
+                    Image.putExtra("flag", str);
+                    startActivity(Image);
+
+                    //startActivity(new Intent(getApplicationContext(), ToDoActivity.class));
+                }
+
+            });
+
+        }
+        if (q_sp == 2)
+        {
+            iv.setImageResource(R.drawable.breakfast);
+            //tv.setText("" +" "+"(১৯৫৩-১৯৭১)"+" "+" সেক্টরঃ ৪নং");
+            tv_sp.setText("Eating breakfast done: 5 points!");
+
+            btn.setOnClickListener(new View.OnClickListener() {
+
+                public void onClick(View v) {
+                    Intent Image = new Intent(getApplicationContext(), ToDoActivity.class);
+                    String str = "0";
+                    Image.putExtra("flag", str);
+                    startActivity(Image);
+
+                    //startActivity(new Intent(getApplicationContext(), ToDoActivity.class));
+                }
+
+            });
+
+        }
+        if (q_sp == 3) {
+            iv.setImageResource(R.drawable.school);
+            //tv.setText("" +" "+"(১৯৫৩-১৯৭১)"+" "+" সেক্টরঃ ৪নং");
+            tv_sp.setText("Gone for School done: 5 points!");
+
+            btn.setOnClickListener(new View.OnClickListener() {
+
+                public void onClick(View v) {
+                    Intent Image = new Intent(getApplicationContext(), ToDoActivity.class);
+                    String str = "0";
+                    Image.putExtra("flag", str);
+                    startActivity(Image);
+
+                    //startActivity(new Intent(getApplicationContext(), ToDoActivity.class));
+                }
+
+            });
+        }
+
+        if (q_sp == 4) {
+            iv.setImageResource(R.drawable.homework);
+            //tv.setText("" +" "+"(১৯৫৩-১৯৭১)"+homework" "+" সেক্টরঃ ৪নং");
+            tv_sp.setText("Homework done: 5 points!");
+
+            btn.setOnClickListener(new View.OnClickListener() {
+
+                public void onClick(View v) {
+                    Intent Image = new Intent(getApplicationContext(), ToDoActivity.class);
+                    String str = "0";
+                    Image.putExtra("flag", str);
+                    startActivity(Image);
+
+                    //startActivity(new Intent(getApplicationContext(), ToDoActivity.class));
+                }
+
+            });
+        }
+
 
     }
 }
